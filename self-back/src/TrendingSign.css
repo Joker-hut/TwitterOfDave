@@ -1,0 +1,112 @@
+.signupwindow {
+    position: fixed; 
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;  
+    border-radius: 10px; 
+    z-index: 10;  
+  }
+
+  .loginwindow{
+    position: fixed;  
+    top: 50%;      
+    left: 50%;       
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;     
+    height: 100%;   
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;   
+    border-radius: 10px; 
+    z-index: 10;    
+  }
+
+  .rightside{
+    padding-top: 2rem;
+  }
+
+  .sideinfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .usersideinfo{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .displayname{
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .displayusername{
+    font-style: italic;
+  }
+
+  .signlogbar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .signlogbar button {
+    background-color: #1BA5F1;
+    border-radius: 15px;
+    width: 100%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  .signlogbar p{
+    text-align: center;
+  }
+
+    .signupsubwindow{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        z-index: 15;
+    }
+
+    .loginsubwindow{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        z-index: 15; 
+    }
+
+    .inputfield{
+        padding: 1rem;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .inputbutton{
+        padding: 1rem;
+        width: 100%;
+        background-color: #1BA5F1;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+
+    .inputmessage{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .close:hover {
+        cursor: pointer;
+    }

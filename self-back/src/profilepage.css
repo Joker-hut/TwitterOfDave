@@ -1,0 +1,82 @@
+
+.profilepagemain{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+}
+.profilebackimage{
+    width: 100%;
+}
+
+.profilebackimage img {
+    border-radius: 0;
+    width: 100%;
+    height: 8rem;
+}
+
+.profilemainimage img{
+    z-index: 20;
+    margin-top: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border: 3px solid black;
+}
+
+.profiledescription{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.profilemainimage{
+    padding-left: 1rem;
+}
+
+.profiledetails{
+    padding-left: 1rem;
+}
+
+.usahname{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+}
+
+.realusahname{
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: gray;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.tweetsmediareplies{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tweetsmediareplies p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.part p {
+    color: gray;
+
+}
+
+.part:hover{
+    cursor: pointer;
+}
+.selectedpart{
+    color: white;
+    border-bottom: solid 2px turquoise;
+}

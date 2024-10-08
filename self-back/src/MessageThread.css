@@ -1,0 +1,84 @@
+
+
+.threadmessagesmain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+.threadmessagesheader{
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.messagethreadmessages{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.messagereceiver{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.messagesender{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+
+.receiverimage{
+    display: flex;
+}
+
+.receivertext{
+    padding: 1rem;
+    background-color: rgb(177, 236, 236);
+    border-radius: 30px;
+    color: black;
+    text-align: center;
+}
+
+.sendertext{
+    padding: 1rem;
+    background-color: rgb(80, 230, 230);
+    border-radius: 30px;
+    color: black;
+    text-align: center;
+}
+
+.receivertime{
+    text-align: center;
+}
+
+.messagesthreadsend{
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.messagesthreadsend input{
+    height: 100%;
+    width: 80%;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 20px;
+    color: gray;
+    background: none;
+    border: 1px solid #1BA5F1;
+}
+
+.lusend{
+    height: 1.5rem;
+    width: auto;
+    padding: 0.5rem;
+}
+

@@ -1,0 +1,230 @@
+.posty{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    z-index: 10;
+    border-bottom: 1px solid lightgray;
+}
+
+.postyone{
+    display: flex;
+    gap: 2rem;
+}
+
+.postybuttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.postuser{
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: lightgray;
+}
+
+.postybutton{
+    height: 1.5rem;
+    width: auto;
+}
+
+.postyusername{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.statybuttonz{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.likeposty:hover{
+    color: rgb(204, 84, 134);
+    cursor: pointer;
+}
+
+.likepostyclicked{
+    color: rgb(204, 84, 134);
+}
+
+.likepostyclicked:hover{
+    cursor: pointer;
+}
+
+.retweetposty:hover{
+    color: rgb(5, 167, 5);
+    cursor: pointer;
+}
+
+.bookmarkposty:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.retweetpostyclicked{
+    color: rgb(5, 167, 5);
+}
+.retweetpostyclicked:hover{
+    cursor: pointer;
+}
+
+.bookmarkpostyclicked{
+    color: yellow;
+}
+.bookmarkpostyclicked:hover{
+    cursor: pointer;
+}
+
+.posthead{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.replysection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otherReplies{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-height: 20rem;
+    overflow-y: scroll;
+
+}
+
+.replybuttun{
+    background: #1BA5F1;
+    color: white;
+    border-radius: 20px;
+    width: 8rem;
+    height: 2.2rem
+}
+
+.addareply{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.addareply textarea{
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border: none;
+    resize: none;
+    background: none;
+    color: white;
+}
+
+.addareply img {
+    height: 3.5rem;
+    width: auto;
+}
+
+.postprofile:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.popup {
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    z-index: 1000;
+    animation: slide-up 1s forwards, slide-down 1s forwards 2s;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      bottom: -50px;
+      opacity: 0;
+    }
+    100% {
+      bottom: 50px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-down {
+    0% {
+      bottom: 50px;
+      opacity: 1;
+    }
+    100% {
+      bottom: -50px;
+      opacity: 0;
+    }
+  }
+
+  .postyuzerz{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .postyusername {
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.postypfp {
+    position: relative; 
+}
+
+.hover-card {
+    position: absolute; 
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px;
+    display: none;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: calc(100% + 1rem); 
+}
+
+.under-profile-image {
+    top: calc(100% + 1rem);
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.under-display-name {
+    top: calc(100% + 1rem); 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* Show hover card on hover */
+.postypfp:hover .hover-card,
+.postyusername:hover .hover-card {
+    display: block;
+}

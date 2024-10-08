@@ -1,0 +1,54 @@
+.replyposty{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid lightgray;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.replypostyone{
+    display: flex;
+    gap: 2rem;
+}
+
+.replypostypfp img{
+    height: 3.5rem;
+    width: auto;
+}
+
+.replypostyusername{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.replypostytext{
+    padding-right: 1rem;
+   
+}
+
+.despicable{
+    word-break: break-word;
+}
+
+.replyingto{
+    color: rgb(127, 180, 221);
+    font-style: italic;
+}
+
+.replyuposty:hover{
+    cursor: pointer;
+    color: lightblue;
+
+}
+
+.replyupostyclicked{
+    color: lightblue
+}
+
+.replyupostyclicked:hover{
+    cursor: pointer;
+}

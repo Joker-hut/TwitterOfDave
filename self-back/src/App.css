@@ -1,0 +1,144 @@
+  body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+.overall{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: 
+  "sidebar mainfeed signups" 
+}
+
+
+
+.sidebar{
+  grid-area: sidebar;
+}
+
+.signups{
+  grid-area: signups;
+}
+
+.alignthatshit{
+  grid-area: mainfeed;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+
+.postsfeed{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.mainfeed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  width: 85%;
+}
+
+.mainnewpost{
+  display: flex;
+  gap: 2rem;
+  background-color: black;
+  padding: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.newpost{
+  display: flex;
+  height: 7rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+
+
+.newpost textarea{
+  background: none;
+  border: none;
+  height: 5rem;
+  width: 100%;
+  color: white;
+  resize: none;
+  font-size: 1rem;
+
+}
+
+.newpost button{
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #1BA5F1;
+  border-radius: 20px;
+  color: white;
+}
+
+.newtweet{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newpost p{
+  font-style: italic;
+}
+
+.heyher{
+  color: lightgray;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.popuptweet {
+  position: fixed;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  z-index: 1000;
+  animation: slide-up 1s forwards, slide-down 1s forwards 2s;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: -50px;
+    opacity: 0;
+  }
+}

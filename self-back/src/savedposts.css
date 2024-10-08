@@ -1,0 +1,13 @@
+.savedpostmain{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+}
+
+.savedpostssub{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 2rem;
+}
